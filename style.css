@@ -19,15 +19,14 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     background-image: url(bg.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     color: #fff;
 }
 
 .countdown{
     display: flex;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .countdown > div{
@@ -48,4 +47,38 @@ body{
 .countdown > div > span{
     font-size: 1.2rem;
     font-weight: normal;
+}
+
+@media screen and (max-width:480px){
+    .main-content{
+        height: 100vh;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-position: 18%;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+    .countdown{
+        display: block;
+        text-align: center;  
+    }
+    .countdown > div{
+        width: 150px;
+        padding: 23px 2px;
+        background-color: rgba(0,0,0,0.5);
+        margin: 20px;
+        box-shadow: 2px 3px 5px rgba(0,0,0,0.25);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .main-content > h2{
+        font-size: 40pt;
+        text-transform: uppercase;
+    }
 }
